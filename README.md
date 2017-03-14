@@ -23,45 +23,46 @@ go get -u github.com/pkgutil/osutil
 import "github.com/pkgutil/osutil"
 ```
 
-## <a name="pkg-index">Index</a>
-* [func IsDir(filename string) bool](#IsDir)
+## Index
+* [func IsDirExist(dir string) bool](#IsDirExist)
 * [func IsExist(filename string) bool](#IsExist)
 * [func IsNotExist(filename string) bool](#IsNotExist)
 * [func MkdirAll(dir string, perm os.FileMode) error](#MkdirAll)
 
-### <a name="pkg-files">Package files</a>
-[osutil.go](/src/github.com/pkgutil/filepathutil/filepathutil.go) 
+
+### Package files
+[doc.go](doc.go) [osutil.go](osutil.go)
 
 
-## <a name="IsDir">func</a> [IsDir](/src/target/osutil.go?s=590:622#L14)
+## func [IsDirExist](osutil.go#L24)
 ``` go
-func IsDir(filename string) bool
+func IsDirExist(dir string) bool
 ```
-IsDir returns whether the filename is directory.
+IsDirExist reports whether dir exists and which is directory.
 
 
 
-## <a name="IsExist">func</a> [IsExist](/src/target/osutil.go?s=256:290#L2)
+## func [IsExist](osutil.go#L12)
 ``` go
 func IsExist(filename string) bool
 ```
-IsExist returns whether the filename is exists.
+IsExist reports whether the filename is exists.
 
 
 
-## <a name="IsNotExist">func</a> [IsNotExist](/src/target/osutil.go?s=425:462#L8)
+## func [IsNotExist](osutil.go#L24)
 ``` go
 func IsNotExist(filename string) bool
 ```
-IsNotExist returns whether the filename is not exists.
+IsNotExist reports whether the filename is not exists.
 
 
 
-## <a name="MkdirAll">func</a> [MkdirAll](/src/target/osutil.go?s=794:843#L20)
+## func [MkdirAll](osutil.go#L30)
 ``` go
 func MkdirAll(dir string, perm os.FileMode) error
 ```
-MkdirAll checks whether the exist dir directory. and create directory to dir filepath if not exist.
+MkdirAll checks whether the exist dir directory and create directory to dir filepath if not exist.
 
 
 [godoc]: https://godoc.org/github.com/pkgutil/osutil
